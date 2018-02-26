@@ -76,7 +76,8 @@ public class CalTest {
         int number_of_days  = Cal.cal(month1,day1,month2,day2,year);
         assertFalse("The answer calculated is wrong",59 == number_of_days);
     }
-
+    
+    //Fault - Not caught
     @Test
     public void calTest7_FebruaryNormalYear(){
         int month1 = 2;
@@ -87,9 +88,6 @@ public class CalTest {
         int number_of_days = Cal.cal(month1, day1, month2, day2, year);
         assertEquals(28,number_of_days);
     }
-
-
-
 
     // Fault - Not Caught
     @Test
