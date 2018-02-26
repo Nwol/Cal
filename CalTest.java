@@ -65,7 +65,8 @@ public class CalTest {
         assertEquals(30,number_of_days);
     }
 
-    // Fault - Not caught
+    // Fault - Not caught, we purposefully put day as zero to see if it catches the fault or not
+
     @Test
     public void caltest6_FebruaryLeapYear_3(){
         int month1 = 1;
@@ -77,7 +78,8 @@ public class CalTest {
         assertFalse("The answer calculated is wrong",59 == number_of_days);
     }
     
-    //Fault - Not caught
+    //Fault - Not caught, we purposefully put day as zero to see if it catches the fault or not
+
     @Test
     public void calTest7_FebruaryNormalYear(){
         int month1 = 2;
