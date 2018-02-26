@@ -147,6 +147,21 @@ public class CalTest {
       assertEquals(364, actual);
    
    }
+    
+   //possible fault of cal() that test finds, if it was 364 instead of 365 since 2016 is a leap year then the fault is caught in this test case.
+   @Test
+   public void calTest_365(){
+    int month1 = 1;
+    int month2 = 12;
+    int day1 = 1;
+    int day2 = 31;
+    int year = 2016;
+
+    int actual = Cal.cal(month1,day1,month2,day2,year);
+
+    assertEquals(365, actual);
+   }
+    
 
     public static void main(String[] args){
         org.junit.runner.JUnitCore.main("CalTest");
